@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WhatDidIDoWrong.Views.ActionButtons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WhatDidIDoWrong.Views"
+             mc:Ignorable="d" 
+             Background="PapayaWhip"
+             DataContext="{Binding Main, Source={StaticResource Locator}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="6" Height="Auto">
+        <WrapPanel  Width="Auto"  Margin="0,4,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="Auto">
+            <Button Content="Api [Reader]" Name="ApiReader" Command="{Binding GetApiReaderIssuersAsync}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <Button Content="Get Error" Name="GetApiErrorResponse" Command="{Binding GetApiErrorResponse}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <!--<Button Content="Issuer By Id" Name="IssuerById" Command="{Binding GetIssuerById}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <Button Content="Add Issuer" Name="AddIssuer"       Command="{Binding GetIssuerById}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <Button Content="Update Issuer" Name="UpdateIssuer"     Command="{Binding GetIssuerById}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <Button Content="'Delete' Issuer" Name="DeleteIssuer"  Command="{Binding DeleteIssuer}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>
+            <Button Content="'UnDelete' Issuer" Name="UnDeleteIssuer" Command="{Binding UnDelete}" HorizontalAlignment="Left" Margin="10,10,0,0" Width="Auto" Height="25"/>-->
+        </WrapPanel>
+    </Grid>
+</UserControl>
